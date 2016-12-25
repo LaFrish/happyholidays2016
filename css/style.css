@@ -13,6 +13,7 @@ margin: 0px;
 overflow: hidden;
 max-width: 1300px;
 width: 1300px;
+max-height: 800px;
 
 }
 h1{
@@ -115,6 +116,7 @@ h2{
 }
 
 .tree {
+  /*position: absolute;*/
   margin-left: -900px;
   margin-top: -200px;
 }
@@ -439,22 +441,21 @@ h2{
 
 /*Responsive*/
 @media screen and (max-width: 1080px) {
-  h1{
-    font-size: 50px;
-    display: inline-block;
-  }
-  h2{
-    font-size: 50px;
-    display: inline-block;
-  }
-  p{
-    font-size: 20px;
-    display: inline-block;
-  }
 	.happyHolidays {
-		width: 90%;
+		width: 80%;
 		left: 5%;
 		margin-top: 0;
 	}
-
+  .happyHolidays h1{
+    font-size: 50px;
+    display: inline-block;
+  }
+	.happyHolidays h2{
+    font-size: 50px;
+    display: inline-block;
+  }
+	.happyHolidays p{
+    font-size: 20px;
+    display: inline-block;
+  }
 }
