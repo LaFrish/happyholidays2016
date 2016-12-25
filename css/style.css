@@ -149,8 +149,6 @@ h2{
   background: #ededed;
 }
 
-
-
 .twinkle:before {
   position: absolute;
   content: '';
@@ -186,94 +184,94 @@ h2{
 
 @-webkit-keyframes twinkle_before_effect {
   0% {
-    left: 150px;
+    left: 160px;
     top: 300px;
     opacity: 0;}
 
   15% {
-    left: 150px;
+    left: 160px;
     top: 300px;
     opacity: 1;}
 
   30% {
-    left: 150px;
+    left: 160px;
     top: 300px;
     opacity: 0;}
 
   35% {
-    left: 170px;
+    left: 180px;
     top: 280px;
     opacity: 0;}
 
   50% {
-    left: 170px;
+    left: 180px;
     top: 280px;
     opacity: 1;}
 
   65% {
-    left: 170px;
+    left: 180px;
     top: 280px;
     opacity: 0;}
 
   70% {
-    left: 193px;
+    left: 200px;
     top: 297px;
     opacity: 0;}
 
   85% {
-    left: 193px;
+    left: 200px;
     top: 297px;
     opacity: 1;}
 
   100% {
-    left: 193px;
+    left: 200px;
     top: 297px;
     opacity: 0;}
 }
 
 @-webkit-keyframes twinkle_after_effect {
   0% {
-    left: 163px;
+    left: 175px;
     top: 287px;
     opacity: 0;}
 
   15% {
-    left: 163px;
+    left: 175px;
     top: 287px;
     opacity: 1;}
 
   30% {
-    left: 163px;
+    left: 175px;
     top: 287px;
     opacity: 0;}
 
   35% {
-    left: 184px;
+    left: 195px;
     top: 269px;
     opacity: 0;}
 
   50% {
-    left: 184px;
+    left: 195px;
     top: 269px;
     opacity: 1;}
 
   65% {
-    left: 184px;
+    left: 195px;
     top: 269px;
     opacity: 0;}
 
   70% {
-    left: 209px;
+    left: 215px;
     top: 284px;
     opacity: 0;}
 
   85% {
-    left: 209px;
+    left: 215px;
     top: 284px;
     opacity: 1;}
 
   100% {
-    left: 209px;
+    left: 215px;
     top: 284px;
     opacity: 0;}
 }
