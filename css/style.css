@@ -1,15 +1,440 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
 
 body{
-background-color: #999999;
+background-color: #000033;
 margin: 0px;
 overflow: hidden;
+max-width: 1300px;
+width: 1300px;
 
 }
-/*h2{
-  left: 50%;
+h1{
+  left: -70px;
   position: absolute;
-  top: 50%;
+  top: 0;
   transform: translate( -50%, -50%);
-  font-size:35;
-  color:hsla(255, 255%, 255%, .1);
+  font-size:100px;
+  color: #eaac11;
+  font-family: 'Great Vibes', cursive;
+}
+h2{
+  left: 250px;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  transform: translate( -50%, -50%);
+  font-size:100px;
+  color: #eaac11;
+  font-family: 'Great Vibes', cursive;
+}
+/*h3{
+  left: 120%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  transform: translate( -50%, -50%);
+  font-size:200px;
+  color: #eaac11;
+  font-family: 'Great Vibes', cursive;
 }*/
+.happyHolidays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.happyHolidays div {
+  z-index: 100;
+}
+
+.happyHolidays:after {
+  content: '';
+  background-image: url(http://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2014/02/snow.png);
+  -webkit-animation: 5s animateIn ease, animate 83s ease 0s infinite;
+          animation: 5s animateIn ease, animate 83s ease 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  background-repeat: repeat;
+  background-size: 43%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+}
+
+.sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  z-index: 2;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 370px;
+  margin-bottom: 32px;
+}
+
+.tree {
+  margin-left: -900px;
+  margin-top: -200px;
+}
+.snowman{
+  z-index: -2;
+    position: absolute;
+    left: 950px;
+    bottom: 70px;
+}
+.ground-1, .ground-2, .ground-3 {
+  width: 75%;
+  height: 200px;
+  background: #e5e5e5;
+  position: absolute;
+  left: -10%;
+  bottom: -100px;
+  border-radius: 100% 100%;
+}
+
+.ground-3 {
+  height: 170px;
+  left: auto;
+    bottom: -100px;
+  background: #ededed;
+}
+
+.ground-2 {
+  left: auto;
+  right: -10%;
+  /*top: 270px;*/
+    bottom: -100px;
+  background: #ededed;
+}
+
+
+
+.twinkle:before {
+  position: absolute;
+  content: '';
+  left: 1008px;
+  top: 409px;
+  width: 30px;
+  height: 3px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: twinkle_before_effect;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.twinkle:after {
+  position: absolute;
+  content: '';
+  left: 1023px;
+  top: 395px;
+  width: 3px;
+  height: 30px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: twinkle_after_effect;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes twinkle_before_effect {
+  0% {
+    left: 150px;
+    top: 300px;
+    opacity: 0;}
+
+  15% {
+    left: 150px;
+    top: 300px;
+    opacity: 1;}
+
+  30% {
+    left: 150px;
+    top: 300px;
+    opacity: 0;}
+
+  35% {
+    left: 170px;
+    top: 280px;
+    opacity: 0;}
+
+  50% {
+    left: 170px;
+    top: 280px;
+    opacity: 1;}
+
+  65% {
+    left: 170px;
+    top: 280px;
+    opacity: 0;}
+
+  70% {
+    left: 193px;
+    top: 297px;
+    opacity: 0;}
+
+  85% {
+    left: 193px;
+    top: 297px;
+    opacity: 1;}
+
+  100% {
+    left: 193px;
+    top: 297px;
+    opacity: 0;}
+}
+
+@-webkit-keyframes twinkle_after_effect {
+  0% {
+    left: 163px;
+    top: 287px;
+    opacity: 0;}
+
+  15% {
+    left: 163px;
+    top: 287px;
+    opacity: 1;}
+
+  30% {
+    left: 163px;
+    top: 287px;
+    opacity: 0;}
+
+  35% {
+    left: 184px;
+    top: 269px;
+    opacity: 0;}
+
+  50% {
+    left: 184px;
+    top: 269px;
+    opacity: 1;}
+
+  65% {
+    left: 184px;
+    top: 269px;
+    opacity: 0;}
+
+  70% {
+    left: 209px;
+    top: 284px;
+    opacity: 0;}
+
+  85% {
+    left: 209px;
+    top: 284px;
+    opacity: 1;}
+
+  100% {
+    left: 209px;
+    top: 284px;
+    opacity: 0;}
+}
+
+.twinklier:before {
+  position: absolute;
+  content: '';
+  left: -130px;
+  top: 30px;
+  width: 80px;
+  height: 3px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: twinklier_before_effect;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.twinklier:after {
+  position: absolute;
+  content: '';
+  left: -100px;
+  top: -10px;
+  width: 3px;
+  height: 80px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: twinklier_after_effect;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes twinklier_before_effect {
+  0% {
+    left: 80px;
+    top: 75px;
+    opacity: 0;}
+
+  15% {
+    left: 80px;
+    top: 75px;
+    opacity: 1;}
+
+  30% {
+    left: 80px;
+    top: 75px;
+    opacity: 0;}
+
+  35% {
+    left: 455px;
+    top: 43px;
+    opacity: 0;}
+
+  50% {
+    left: 455px;
+    top: 43px;
+    opacity: 1;}
+
+  65% {
+    left: 455px;
+    top: 43px;
+    opacity: 0;}
+
+  70% {
+    left: -100px;
+    top: 29px;
+    opacity: 0;}
+
+  85% {
+    left: -100px;
+    top: 29px;
+    opacity: 1;}
+
+  100% {
+    left: -100px;
+    top: 29px;
+    opacity: 0;}
+}
+
+@-webkit-keyframes twinklier_after_effect {
+  0% {
+    left: 110px;
+    top: 35px;
+    opacity: 0;}
+
+  15% {
+    left: 110px;
+    top: 35px;
+    opacity: 1;}
+
+  30% {
+    left: 110px;
+    top: 35px;
+    opacity: 0;}
+
+  35% {
+    left: 495px;
+    top: 8px;
+    opacity: 0;}
+
+  50% {
+    left: 495px;
+    top: 8px;
+    opacity: 1;}
+
+  65% {
+    left: 495px;
+    top: 8px;
+    opacity: 0;}
+
+  70% {
+    left: -65px;
+    top: -10px;
+    opacity: 0;}
+
+  85% {
+    left: -65px;
+    top: -10px;
+    opacity: 1;}
+
+  100% {
+    left: -65px;
+    top: -10px;
+    opacity: 0;}
+}
+
+
+@-webkit-keyframes animateIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0px;
+  }
+  to {
+    background-position: 0px 5500px;
+  }
+}
+@keyframes animate {
+  from {
+    background-position: 0 0px;
+  }
+  to {
+    background-position: 0px 5500px;
+  }
+}

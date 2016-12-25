@@ -1,55 +1,100 @@
-var c = document.getElementById('canv'),
-    $ = c.getContext("2d");
-var w = c.width = window.innerWidth,
-    h = c.height = window.innerHeight;
+var particleCount = 300;
+var particleMax   = 1000;
+var sky           = document.querySelector('.sky');
+var canvas        = document.createElement('canvas');
+var ctx           = canvas.getContext('2d');
+var width         = sky.clientWidth;
+var height        = sky.clientHeight;
+var i             = 0;
+var active        = false;
+var snowflakes    = [];
+var snowflake;
 
-Snowy();
-function Snowy() {
-  var snow, arr = [];
-  var num = 600, tsc = 1, speed = 1;
-  var sc = 1.3, t = 0, mv = 20, min = 1;
-    for (var i = 0; i < num; ++i) {
-      snow = new Flake();
-      snow.y = Math.random() * (h + 50);
-      snow.x = Math.random() * w;
-      snow.t = Math.random() * (Math.PI * 2);
-      snow.size = (100 / (10 + (Math.random() * 100))) * sc;
-      snow.speed = (Math.pow(snow.size * .5, 2) * .15) * speed;
-      snow.speed = snow.speed < min ? min : snow.speed;
-      arr.push(snow);
-    }
-  letItSnow();
-  function letItSnow(){
-    window.requestAnimationFrame(letItSnow);
-      $.clearRect(0, 0, w, h);
-      $.fillStyle = '#e';
-      $.fillRect(0, 0, w, h);
-      $.fill();
-        for (var i = 0; i < arr.length; ++i) {
-          f = arr[i];
-          f.t += .05;
-          f.t = f.t >= Math.PI * 2 ? 0 : f.t;
-          f.y += f.speed;
-          f.x += Math.sin(f.t * tsc) * (f.size * .3);
-          if (f.y > h + 50) f.y = -10 - Math.random() * mv;
-          if (f.x > w + mv) f.x = - mv;
-          if (f.x < - mv) f.x = w + mv;
-          f.draw();}
- }
- function Flake() {
-   this.draw = function() {
-      this.g = $.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
-      this.g.addColorStop(0, '#fff');
-      this.g.addColorStop(1, '#000');
-      $.moveTo(this.x, this.y);
-      $.fillStyle = this.g;
-      $.beginPath();
-      $.arc(this.x, this.y, this.size, 0, Math.PI * 2, true);
-      $.fill();}
+canvas.style.position = 'absolute';
+canvas.style.left = canvas.style.top = '0';
+
+var Snowflake = function () {
+  this.x = 0;
+  this.y = 0;
+  this.vy = 0;
+  this.vx = 0;
+  this.r = 0;
+
+  this.reset();
+};
+
+Snowflake.prototype.reset = function() {
+  this.x = Math.random() * width;
+  this.y = Math.random() * -height;
+  this.vy = 1 + Math.random() * 1;
+  this.vx = 0.5 - Math.random();
+  this.r = 1 + Math.random() * 2;
+  this.o = 0.5 + Math.random() * 0.5;
+};
+
+function generateSnowFlakes() {
+  snowflakes = [];
+  for (i = 0; i < particleMax; i++) {
+    snowflake = new Snowflake();
+    snowflake.reset();
+    snowflakes.push(snowflake);
   }
 }
 
-window.addEventListener('resize', function(){
-  c.width = w = window.innerWidth;
-  c.height = h = window.innerHeight;
-}, false);
+generateSnowFlakes();
+
+function update() {
+  ctx.clearRect(0, 0, width, height);
+
+  if (!active) {
+    return;
+  }
+
+  for (i = 0; i < particleCount; i++) {
+    snowflake = snowflakes[i];
+    snowflake.y += snowflake.vy;
+    snowflake.x += snowflake.vx;
+
+    ctx.globalAlpha = snowflake.o;
+    ctx.beginPath();
+    ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
+    ctx.closePath();
+    ctx.fill();
+
+    if (snowflake.y > height) {
+      snowflake.reset();
+    }
+  }
+
+  requestAnimFrame(update);
+}
+
+function onResize() {
+  width = sky.clientWidth;
+  height = sky.clientHeight;
+  canvas.width = width;
+  canvas.height = height;
+  ctx.fillStyle = '#FFF';
+
+  var wasActive = active;
+  active = width > 600;
+
+  if (!wasActive && active) {
+    requestAnimFrame(update);
+  }
+}
+
+
+window.requestAnimFrame = (function() {
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+onResize();
+window.addEventListener('resize', onResize, false);
+
+sky.appendChild(canvas);
