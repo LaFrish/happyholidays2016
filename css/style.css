@@ -132,6 +132,7 @@ h2{
   width: 75%;
   height: 200px;
   background: #e5e5e5;
+  /*background: #ededed;*/
   position: absolute;
   left: -10%;
   bottom: -100px;
@@ -142,7 +143,7 @@ h2{
   height: 170px;
   left: auto;
     bottom: -100px;
-  background: #ededed;
+  background: #e5e5e5;
 }
 
 .ground-2 {
@@ -150,9 +151,15 @@ h2{
   right: -10%;
   /*top: 270px;*/
     bottom: -100px;
-  background: #ededed;
+  background: #e5e5e5;
 }
 
+.ground-4{
+  background: #e5e5e5;
+  margin-bottom: -375px;
+  width: 100%;
+  height: 300px;
+}
 .twinkle:before {
   position: absolute;
   content: '';
@@ -450,6 +457,55 @@ img {
 }
 
 /*Responsive*/
+@media (min-width: 0) and (max-width: 375px) {
+    .happyHolidays {
+        width:375px
+    }
+    .happyHolidays h1{
+      font-size: 90px;
+      display: inline-block;
+      text-align: center;
+      margin-top: 70px;
+      margin-left: 25px;
+    }
+  	.happyHolidays h2{
+      font-size: 90px;
+      display: inline-block;
+      text-align: center;
+      margin-top: 135px;
+      margin-left: -250px;
+    }
+  	.happyHolidays p{
+      font-size: 14px;
+      display: inline-block;
+      text-align: center;
+    }
+    .ground-1{
+    width: 200px;
+    margin-left: -90px;
+    }
+    .ground-2{
+      width: 200px;
+    margin-left: -90px;
+    }
+    .ground-4{
+      width: 500px;
+    margin-bottom: 0;
+    }
+  .tree{
+    margin-left: -150px;
+    margin-top: 190px;
+    width: 30%;
+  }
+  .snowman{
+    margin-left: -520px;
+    width: 25%;
+  }
+  .tree{
+    margin-left: 120px;
+    width: 25%;
+  }
+}
 
 @media (min-width: 0) and (max-width: 656px) {
     .happyHolidays {
@@ -483,7 +539,7 @@ img {
     margin-left: -90px;
     }
     .ground-2{
-    width: 120%;
+    /*width: 120%;*/
     margin-left: -90px;
     }
   .tree{
@@ -492,8 +548,8 @@ img {
     width: 30%;
   }
   .snowman{
-    /*margin-left: -720px;*/
-    /*width: 25%;*/
+    margin-left: -520px;
+    width: 25%;
   }
 }
 
@@ -520,10 +576,7 @@ img {
       display: inline-block;
       text-align: center;
     }
-    /*.container{
-      width: 50%;
-      height: 100%;
-    }*/
+
     .ground-1{
     width: 120%;
     margin-left: 500px;
