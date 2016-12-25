@@ -436,3 +436,25 @@ h2{
     background-position: 0px 5500px;
   }
 }
+
+/*Responsive*/
+@media screen and (max-width: 1080px) {
+  h1{
+    font-size: 50px;
+    display: inline-block;
+  }
+  h2{
+    font-size: 50px;
+    display: inline-block;
+  }
+  p{
+    font-size: 20px;
+    display: inline-block;
+  }
+	.happyHolidays {
+		width: 90%;
+		left: 5%;
+		margin-top: 0;
+	}
+
+}
