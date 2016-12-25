@@ -13,6 +13,7 @@ margin: 0px;
 overflow: hidden;
 max-width: 1300px;
 width: 1300px;
+min-width: 656px;
 
 
 }
@@ -457,7 +458,7 @@ img {
 }
 
 /*Responsive*/
-@media (min-width: 0) and (max-width: 375px) {
+/*@media (min-width: 0) and (max-width: 375px) {
     .happyHolidays {
         width:375px
     }
@@ -505,12 +506,12 @@ img {
     margin-left: 120px;
     width: 25%;
   }
-}
+}*/
 
-@media (min-width: 0) and (max-width: 656px) {
-    .happyHolidays {
-        width:640px
-    }
+@media (min-width: 650px) and (max-width: 656px) {
+    /*.happyHolidays {
+        width:100%
+    }*/
     .happyHolidays h1{
       font-size: 90px;
       display: inline-block;
