@@ -1,6 +1,6 @@
-/** {
+* {
 box-sizing: border-box;
-}*/
+}
 
 body{
   background-color: #000033;
@@ -14,9 +14,7 @@ body{
 
 .note{
   margin-top: -100px;
-  /*margin-left: -500px;*/
   width: 500px;
-  /*height: 500px;*/
   text-align: center;
   z-index: 1000;
 }
@@ -37,6 +35,7 @@ p{
 
 .name{
   color: red;
+  text-align: center;
 }
 .happyHolidays {
   display: -webkit-box;
