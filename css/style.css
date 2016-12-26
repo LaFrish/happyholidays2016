@@ -1,61 +1,42 @@
 /** {
-  box-sizing: border-box;
+box-sizing: border-box;
 }*/
 
 body{
-background-color: #000033;
-margin: 0px;
-overflow: hidden;
-max-width: 1300px;
-width: 1300px;
-min-width: 656px;
+  background-color: #000033;
+  margin: 0px;
+  overflow: hidden;
+  max-width: 1300px;
+  width: 1300px;
+  min-width: 656px;
 
 }
-h1{
-  /*margin-left: 900px;*/
-  /*position: absolute;*/
 
-  /*transform: translate( -50%, -50%);*/
-  margin-top: 0px;
+.note{
+  margin-top: -100px;
+  /*margin-left: -500px;*/
+  width: 500px;
+  /*height: 500px;*/
+  text-align: center;
+  z-index: 1000;
+}
+h1{
+  margin-left: -210px;
   font-size:100px;
   color: #eaac11;
   font-family: 'Great Vibes', cursive;
   text-align: center;
   width: 800px;
 }
-/*h2{
-  margin-left: 30px;
-  top: 0%;
-  width: 100%;
-  transform: translate( -50%, -50%);
-  font-size:100px;
-  color: #eaac11;
-  font-family: 'Great Vibes', cursive;
-  text-align: center;
-}*/
-/*h3{
-  left: 120%;
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  transform: translate( -50%, -50%);
-  font-size:200px;
-  color: #eaac11;
-  font-family: 'Great Vibes', cursive;
-}*/
-
 p{
-font-family: 'Great Vibes', cursive;
-font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  text-align: center;
+  /*margin-top: 150px;*/
 }
 
-.note{
-  margin-top: 200px;
-  margin-left: -500px;
-  width: 900px;
-  /*height: 500px;*/
-  text-align: center;
-  z-index: 100;
+.name{
+  color: red;
 }
 .happyHolidays {
   display: -webkit-box;
@@ -63,8 +44,8 @@ font-size: 50px;
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   z-index: 0;
 }
@@ -77,16 +58,16 @@ font-size: 50px;
   content: '';
   background-image: url(http://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2014/02/snow.png);
   -webkit-animation: 5s animateIn ease, animate 83s ease 0s infinite;
-          animation: 5s animateIn ease, animate 83s ease 0s infinite;
+  animation: 5s animateIn ease, animate 83s ease 0s infinite;
   -webkit-animation-fill-mode: forwards;
   background-repeat: repeat;
   background-size: 43%;
   position: absolute;
   top: 0;
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .sky {
@@ -104,14 +85,14 @@ font-size: 50px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: #FFF;
@@ -128,15 +109,15 @@ font-size: 50px;
 }
 
 .tree {
-  /*position: absolute;*/
-  margin-left: -558px;
-  margin-top: -110px;
+  position: relative;
+  margin-left: -900px;
+  margin-top: -335px;
 }
 .snowman{
   z-index: -2;
-    position: absolute;
-    left: 950px;
-    bottom: 70px;
+  position: absolute;
+  left: 950px;
+  bottom: 70px;
 }
 .ground-1, .ground-2, .ground-3 {
   width: 75%;
@@ -152,7 +133,7 @@ font-size: 50px;
 .ground-3 {
   height: 170px;
   left: auto;
-    bottom: -100px;
+  bottom: -100px;
   background: #e5e5e5;
 }
 
@@ -160,7 +141,7 @@ font-size: 50px;
   left: auto;
   right: -10%;
   /*top: 270px;*/
-    bottom: -100px;
+  bottom: -100px;
   background: #e5e5e5;
 }
 
@@ -203,8 +184,8 @@ font-size: 50px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 @media {
   img {
@@ -217,484 +198,484 @@ img {
     top: 300px;
     opacity: 0;}
 
-  15% {
-    left: 160px;
-    top: 300px;
-    opacity: 1;}
+    15% {
+      left: 160px;
+      top: 300px;
+      opacity: 1;}
 
-  30% {
-    left: 160px;
-    top: 300px;
-    opacity: 0;}
+      30% {
+        left: 160px;
+        top: 300px;
+        opacity: 0;}
 
-  35% {
-    left: 180px;
-    top: 280px;
-    opacity: 0;}
+        35% {
+          left: 180px;
+          top: 280px;
+          opacity: 0;}
 
-  50% {
-    left: 180px;
-    top: 280px;
-    opacity: 1;}
+          50% {
+            left: 180px;
+            top: 280px;
+            opacity: 1;}
 
-  65% {
-    left: 180px;
-    top: 280px;
-    opacity: 0;}
+            65% {
+              left: 180px;
+              top: 280px;
+              opacity: 0;}
 
-  70% {
-    left: 200px;
-    top: 297px;
-    opacity: 0;}
+              70% {
+                left: 200px;
+                top: 297px;
+                opacity: 0;}
 
-  85% {
-    left: 200px;
-    top: 297px;
-    opacity: 1;}
+                85% {
+                  left: 200px;
+                  top: 297px;
+                  opacity: 1;}
 
-  100% {
-    left: 200px;
-    top: 297px;
-    opacity: 0;}
-}
+                  100% {
+                    left: 200px;
+                    top: 297px;
+                    opacity: 0;}
+                  }
 
-@-webkit-keyframes twinkle_after_effect {
-  0% {
-    left: 175px;
-    top: 287px;
-    opacity: 0;}
+                  @-webkit-keyframes twinkle_after_effect {
+                    0% {
+                      left: 175px;
+                      top: 287px;
+                      opacity: 0;}
 
-  15% {
-    left: 175px;
-    top: 287px;
-    opacity: 1;}
+                      15% {
+                        left: 175px;
+                        top: 287px;
+                        opacity: 1;}
 
-  30% {
-    left: 175px;
-    top: 287px;
-    opacity: 0;}
+                        30% {
+                          left: 175px;
+                          top: 287px;
+                          opacity: 0;}
 
-  35% {
-    left: 195px;
-    top: 269px;
-    opacity: 0;}
+                          35% {
+                            left: 195px;
+                            top: 269px;
+                            opacity: 0;}
 
-  50% {
-    left: 195px;
-    top: 269px;
-    opacity: 1;}
+                            50% {
+                              left: 195px;
+                              top: 269px;
+                              opacity: 1;}
 
-  65% {
-    left: 195px;
-    top: 269px;
-    opacity: 0;}
+                              65% {
+                                left: 195px;
+                                top: 269px;
+                                opacity: 0;}
 
-  70% {
-    left: 215px;
-    top: 284px;
-    opacity: 0;}
+                                70% {
+                                  left: 215px;
+                                  top: 284px;
+                                  opacity: 0;}
 
-  85% {
-    left: 215px;
-    top: 284px;
-    opacity: 1;}
+                                  85% {
+                                    left: 215px;
+                                    top: 284px;
+                                    opacity: 1;}
 
-  100% {
-    left: 215px;
-    top: 284px;
-    opacity: 0;}
-}
+                                    100% {
+                                      left: 215px;
+                                      top: 284px;
+                                      opacity: 0;}
+                                    }
 
-.twinklier:before {
-  position: absolute;
-  content: '';
-  left: -130px;
-  top: 30px;
-  width: 80px;
-  height: 3px;
-  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
-  z-index: 4;
-  -webkit-animation-name: twinklier_before_effect;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-}
+                                    .twinklier:before {
+                                      position: absolute;
+                                      content: '';
+                                      left: -130px;
+                                      top: 30px;
+                                      width: 80px;
+                                      height: 3px;
+                                      background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+                                      z-index: 4;
+                                      -webkit-animation-name: twinklier_before_effect;
+                                      -webkit-animation-duration: 5s;
+                                      -webkit-animation-delay: 2s;
+                                      -webkit-animation-timing-function: linear;
+                                      -webkit-animation-iteration-count: infinite;
+                                    }
 
-.twinklier:after {
-  position: absolute;
-  content: '';
-  left: -100px;
-  top: -10px;
-  width: 3px;
-  height: 80px;
-  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
-  z-index: 4;
-  -webkit-animation-name: twinklier_after_effect;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-}
+                                    .twinklier:after {
+                                      position: absolute;
+                                      content: '';
+                                      left: -100px;
+                                      top: -10px;
+                                      width: 3px;
+                                      height: 80px;
+                                      background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+                                      z-index: 4;
+                                      -webkit-animation-name: twinklier_after_effect;
+                                      -webkit-animation-duration: 5s;
+                                      -webkit-animation-delay: 2s;
+                                      -webkit-animation-timing-function: linear;
+                                      -webkit-animation-iteration-count: infinite;
+                                    }
 
-@-webkit-keyframes twinklier_before_effect {
-  0% {
-    left: 80px;
-    top: 75px;
-    opacity: 0;}
+                                    @-webkit-keyframes twinklier_before_effect {
+                                      0% {
+                                        left: 80px;
+                                        top: 75px;
+                                        opacity: 0;}
 
-  15% {
-    left: 80px;
-    top: 75px;
-    opacity: 1;}
+                                        15% {
+                                          left: 80px;
+                                          top: 75px;
+                                          opacity: 1;}
 
-  30% {
-    left: 80px;
-    top: 75px;
-    opacity: 0;}
+                                          30% {
+                                            left: 80px;
+                                            top: 75px;
+                                            opacity: 0;}
 
-  35% {
-    left: 455px;
-    top: 43px;
-    opacity: 0;}
+                                            35% {
+                                              left: 455px;
+                                              top: 43px;
+                                              opacity: 0;}
 
-  50% {
-    left: 455px;
-    top: 43px;
-    opacity: 1;}
+                                              50% {
+                                                left: 455px;
+                                                top: 43px;
+                                                opacity: 1;}
 
-  65% {
-    left: 455px;
-    top: 43px;
-    opacity: 0;}
+                                                65% {
+                                                  left: 455px;
+                                                  top: 43px;
+                                                  opacity: 0;}
 
-  70% {
-    left: -100px;
-    top: 29px;
-    opacity: 0;}
+                                                  70% {
+                                                    left: -100px;
+                                                    top: 29px;
+                                                    opacity: 0;}
 
-  85% {
-    left: -100px;
-    top: 29px;
-    opacity: 1;}
+                                                    85% {
+                                                      left: -100px;
+                                                      top: 29px;
+                                                      opacity: 1;}
 
-  100% {
-    left: -100px;
-    top: 29px;
-    opacity: 0;}
-}
+                                                      100% {
+                                                        left: -100px;
+                                                        top: 29px;
+                                                        opacity: 0;}
+                                                      }
 
-@-webkit-keyframes twinklier_after_effect {
-  0% {
-    left: 110px;
-    top: 35px;
-    opacity: 0;}
+                                                      @-webkit-keyframes twinklier_after_effect {
+                                                        0% {
+                                                          left: 110px;
+                                                          top: 35px;
+                                                          opacity: 0;}
 
-  15% {
-    left: 110px;
-    top: 35px;
-    opacity: 1;}
+                                                          15% {
+                                                            left: 110px;
+                                                            top: 35px;
+                                                            opacity: 1;}
 
-  30% {
-    left: 110px;
-    top: 35px;
-    opacity: 0;}
+                                                            30% {
+                                                              left: 110px;
+                                                              top: 35px;
+                                                              opacity: 0;}
 
-  35% {
-    left: 495px;
-    top: 8px;
-    opacity: 0;}
+                                                              35% {
+                                                                left: 495px;
+                                                                top: 8px;
+                                                                opacity: 0;}
 
-  50% {
-    left: 495px;
-    top: 8px;
-    opacity: 1;}
+                                                                50% {
+                                                                  left: 495px;
+                                                                  top: 8px;
+                                                                  opacity: 1;}
 
-  65% {
-    left: 495px;
-    top: 8px;
-    opacity: 0;}
+                                                                  65% {
+                                                                    left: 495px;
+                                                                    top: 8px;
+                                                                    opacity: 0;}
 
-  70% {
-    left: -65px;
-    top: -10px;
-    opacity: 0;}
+                                                                    70% {
+                                                                      left: -65px;
+                                                                      top: -10px;
+                                                                      opacity: 0;}
 
-  85% {
-    left: -65px;
-    top: -10px;
-    opacity: 1;}
+                                                                      85% {
+                                                                        left: -65px;
+                                                                        top: -10px;
+                                                                        opacity: 1;}
 
-  100% {
-    left: -65px;
-    top: -10px;
-    opacity: 0;}
-}
-
-
-@-webkit-keyframes animateIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.25;
-  }
-}
-
-@keyframes animateIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.25;
-  }
-}
-@-webkit-keyframes animate {
-  from {
-    background-position: 0 0px;
-  }
-  to {
-    background-position: 0px 5500px;
-  }
-}
-@keyframes animate {
-  from {
-    background-position: 0 0px;
-  }
-  to {
-    background-position: 0px 5500px;
-  }
-}
-
-/*Responsive*/
-/*@media (min-width: 0) and (max-width: 375px) {
-    .happyHolidays {
-        width:375px
-    }
-    .happyHolidays h1{
-      font-size: 90px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 70px;
-      margin-left: 25px;
-    }
-  	.happyHolidays h2{
-      font-size: 90px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 135px;
-      margin-left: -250px;
-    }
-  	.happyHolidays p{
-      font-size: 14px;
-      display: inline-block;
-      text-align: center;
-    }
-    .ground-1{
-    width: 200px;
-    margin-left: -90px;
-    }
-    .ground-2{
-      width: 200px;
-    margin-left: -90px;
-    }
-    .ground-4{
-      width: 500px;
-    margin-bottom: 0;
-    }
-  .tree{
-    margin-left: -150px;
-    margin-top: 190px;
-    width: 30%;
-  }
-  .snowman{
-    margin-left: -520px;
-    width: 25%;
-  }
-  .tree{
-    margin-left: 120px;
-    width: 25%;
-  }
-}*/
-
-@media (min-width: 650px) and (max-width: 656px) {
-    /*.happyHolidays {
-        width:100%
-    }*/
-    .happyHolidays h1{
-      font-size: 90px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 70px;
-      margin-left: 25px;
-    }
-  	.happyHolidays h2{
-      font-size: 90px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 135px;
-      margin-left: -250px;
-    }
-  	.happyHolidays p{
-      font-size: 14px;
-      display: inline-block;
-      text-align: center;
-    }
-    .container{
-      width: 50%;
-      height: 100%;
-    }
-    .ground-1{
-    width: 120%;
-    margin-left: -90px;
-    }
-    .ground-2{
-    /*width: 120%;*/
-    margin-left: -90px;
-    }
-  .tree{
-    margin-left: -150px;
-    margin-top: 190px;
-    width: 30%;
-  }
-  .snowman{
-    margin-left: -520px;
-    width: 25%;
-  }
-}
-
-@media (min-width: 657px) and (max-width: 977px) {
-    .happyHolidays {
-        width:640px
-    }
-    .happyHolidays h1{
-      font-size: 20px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 70px;
-      margin-left: 25px;
-    }
-    .happyHolidays h2{
-      font-size: 20px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 135px;
-      margin-left: -250px;
-    }
-    .happyHolidays p{
-      font-size: 14px;
-      display: inline-block;
-      text-align: center;
-    }
-
-    .ground-1{
-    width: 120%;
-    margin-left: 500px;
-    }
-    .ground-2{
-    width: 120%;
-    margin-right: 150px;
-    }
-    .ground-3{
-    width: 100%;
-    /*margin-top: 300px;*/
-    margin-left: 200px;
-    }
-  .tree{
-    margin-left: -150px;
-    margin-top: 190px;
-    width: 30%;
-  }
-  .snowman{
-    margin-left: -720px;
-    width: 25%;
-  }
-}
+                                                                        100% {
+                                                                          left: -65px;
+                                                                          top: -10px;
+                                                                          opacity: 0;}
+                                                                        }
 
 
-@media (min-width: 977px) and (max-width: 1080px) {
-    .happyHolidays {
-        width:960px
-    }
-    .happyHolidays h1{
-      font-size: 40px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 70px;
-      margin-left: 25px;
-    }
-    .happyHolidays h2{
-      font-size: 40px;
-      display: inline-block;
-      text-align: center;
-      margin-top: 135px;
-      margin-left: -250px;
-    }
-    .happyHolidays p{
-      font-size: 14px;
-      display: inline-block;
-      text-align: center;
-    }
-    /*.container{
-      width: 50%;
-      height: 100%;
-    }*/
-    .ground-1{
-    /*width: 120%;*/
-    margin-left: 0px;
-    }
-    .ground-2{
-    /*width: 120%;*/
-    margin-right: -50px;
-    }
-  .tree{
-    /*margin-left: -150px;
-    margin-top: 190px;*/
-    width: 30%;
-  }
-  .snowman{
-    margin-left: -720px;
-    width: 25%;
-  }
-}
+                                                                        @-webkit-keyframes animateIn {
+                                                                          from {
+                                                                            opacity: 0;
+                                                                          }
+                                                                          to {
+                                                                            opacity: 0.25;
+                                                                          }
+                                                                        }
 
-@media screen and (max-width: 1080px) {
-	/*.happyHolidays {
-		width: 100%;
-		left: 5%;
-		margin-top: 0;
-    text-align: center;
-	}*/
-  .happyHolidays h1{
-    font-size: 100px;
-    display: inline-block;
-    text-align: center;
-    /*margin-top: 100px;*/
-      margin-left: -100px;
-  }
-	.happyHolidays h2{
-    font-size: 100px;
-    display: inline-block;
-    text-align: center;
-    /*margin-left: -100px;*/
-  }
-	.happyHolidays p{
-    font-size: 20px;
-    display: inline-block;
-    text-align: center;
-    margin-left: 100px;
-  }
-  /*.container{
-    width: 50%;
-    height: 100%;
-  }*/
-  .snowman{
-    margin-left: -250;
+                                                                        @keyframes animateIn {
+                                                                          from {
+                                                                            opacity: 0;
+                                                                          }
+                                                                          to {
+                                                                            opacity: 0.25;
+                                                                          }
+                                                                        }
+                                                                        @-webkit-keyframes animate {
+                                                                          from {
+                                                                            background-position: 0 0px;
+                                                                          }
+                                                                          to {
+                                                                            background-position: 0px 5500px;
+                                                                          }
+                                                                        }
+                                                                        @keyframes animate {
+                                                                          from {
+                                                                            background-position: 0 0px;
+                                                                          }
+                                                                          to {
+                                                                            background-position: 0px 5500px;
+                                                                          }
+                                                                        }
 
-  }
-}
-/*@media (min-width: 1297px) {
-    .happyHolidays {
-        width:1280px
-    }
-}*/
+                                                                        /*Responsive*/
+                                                                        /*@media (min-width: 0) and (max-width: 375px) {
+                                                                        .happyHolidays {
+                                                                        width:375px
+                                                                      }
+                                                                      .happyHolidays h1{
+                                                                      font-size: 90px;
+                                                                      display: inline-block;
+                                                                      text-align: center;
+                                                                      margin-top: 70px;
+                                                                      margin-left: 25px;
+                                                                    }
+                                                                    .happyHolidays h2{
+                                                                    font-size: 90px;
+                                                                    display: inline-block;
+                                                                    text-align: center;
+                                                                    margin-top: 135px;
+                                                                    margin-left: -250px;
+                                                                  }
+                                                                  .happyHolidays p{
+                                                                  font-size: 14px;
+                                                                  display: inline-block;
+                                                                  text-align: center;
+                                                                }
+                                                                .ground-1{
+                                                                width: 200px;
+                                                                margin-left: -90px;
+                                                              }
+                                                              .ground-2{
+                                                              width: 200px;
+                                                              margin-left: -90px;
+                                                            }
+                                                            .ground-4{
+                                                            width: 500px;
+                                                            margin-bottom: 0;
+                                                          }
+                                                          .tree{
+                                                          margin-left: -150px;
+                                                          margin-top: 190px;
+                                                          width: 30%;
+                                                        }
+                                                        .snowman{
+                                                        margin-left: -520px;
+                                                        width: 25%;
+                                                      }
+                                                      .tree{
+                                                      margin-left: 120px;
+                                                      width: 25%;
+                                                    }
+                                                    }*/
+
+                                                    @media (min-width: 650px) and (max-width: 656px) {
+                                                      /*.happyHolidays {
+                                                      width:100%
+                                                      }*/
+                                                      .happyHolidays h1{
+                                                        font-size: 90px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 70px;
+                                                        margin-left: 25px;
+                                                      }
+                                                      .happyHolidays h2{
+                                                        font-size: 90px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 135px;
+                                                        margin-left: -250px;
+                                                      }
+                                                      .happyHolidays p{
+                                                        font-size: 14px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                      }
+                                                      .container{
+                                                        width: 50%;
+                                                        height: 100%;
+                                                      }
+                                                      .ground-1{
+                                                        width: 120%;
+                                                        margin-left: -90px;
+                                                      }
+                                                      .ground-2{
+                                                        /*width: 120%;*/
+                                                        margin-left: -90px;
+                                                      }
+                                                      .tree{
+                                                        margin-left: -150px;
+                                                        margin-top: 190px;
+                                                        width: 30%;
+                                                      }
+                                                      .snowman{
+                                                        margin-left: -520px;
+                                                        width: 25%;
+                                                      }
+                                                    }
+
+                                                    @media (min-width: 657px) and (max-width: 977px) {
+                                                      .happyHolidays {
+                                                        width:640px
+                                                      }
+                                                      .happyHolidays h1{
+                                                        font-size: 20px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 70px;
+                                                        margin-left: 25px;
+                                                      }
+                                                      .happyHolidays h2{
+                                                        font-size: 20px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 135px;
+                                                        margin-left: -250px;
+                                                      }
+                                                      .happyHolidays p{
+                                                        font-size: 14px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                      }
+
+                                                      .ground-1{
+                                                        width: 120%;
+                                                        margin-left: 500px;
+                                                      }
+                                                      .ground-2{
+                                                        width: 120%;
+                                                        margin-right: 150px;
+                                                      }
+                                                      .ground-3{
+                                                        width: 100%;
+                                                        /*margin-top: 300px;*/
+                                                        margin-left: 200px;
+                                                      }
+                                                      .tree{
+                                                        margin-left: -150px;
+                                                        margin-top: 190px;
+                                                        width: 30%;
+                                                      }
+                                                      .snowman{
+                                                        margin-left: -720px;
+                                                        width: 25%;
+                                                      }
+                                                    }
+
+
+                                                    @media (min-width: 977px) and (max-width: 1080px) {
+                                                      .happyHolidays {
+                                                        width:960px
+                                                      }
+                                                      .happyHolidays h1{
+                                                        font-size: 40px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 70px;
+                                                        margin-left: 25px;
+                                                      }
+                                                      .happyHolidays h2{
+                                                        font-size: 40px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-top: 135px;
+                                                        margin-left: -250px;
+                                                      }
+                                                      .happyHolidays p{
+                                                        font-size: 14px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                      }
+                                                      /*.container{
+                                                      width: 50%;
+                                                      height: 100%;
+                                                      }*/
+                                                      .ground-1{
+                                                        /*width: 120%;*/
+                                                        margin-left: 0px;
+                                                      }
+                                                      .ground-2{
+                                                        /*width: 120%;*/
+                                                        margin-right: -50px;
+                                                      }
+                                                      .tree{
+                                                        /*margin-left: -150px;
+                                                        margin-top: 190px;*/
+                                                        width: 30%;
+                                                      }
+                                                      .snowman{
+                                                        margin-left: -720px;
+                                                        width: 25%;
+                                                      }
+                                                    }
+
+                                                    @media screen and (max-width: 1080px) {
+                                                      /*.happyHolidays {
+                                                      width: 100%;
+                                                      left: 5%;
+                                                      margin-top: 0;
+                                                      text-align: center;
+                                                      }*/
+                                                      .happyHolidays h1{
+                                                        font-size: 100px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        /*margin-top: 100px;*/
+                                                        margin-left: -100px;
+                                                      }
+                                                      .happyHolidays h2{
+                                                        font-size: 100px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        /*margin-left: -100px;*/
+                                                      }
+                                                      .happyHolidays p{
+                                                        font-size: 20px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                        margin-left: 100px;
+                                                      }
+                                                      /*.container{
+                                                      width: 50%;
+                                                      height: 100%;
+                                                      }*/
+                                                      .snowman{
+                                                        margin-left: -250;
+
+                                                      }
+                                                    }
+                                                    /*@media (min-width: 1297px) {
+                                                    .happyHolidays {
+                                                    width:1280px
+                                                  }
+                                                  }*/
